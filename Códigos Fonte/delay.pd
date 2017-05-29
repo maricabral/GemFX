@@ -1,0 +1,33 @@
+#N canvas 449 93 611 522 10;
+#X obj 50 17 adc~;
+#X obj 105 163 *~ 0.6;
+#X obj 51 334 dac~;
+#X obj 70 91 delwrite~ delay 500;
+#X obj 80 223 delread~ delay 150;
+#X obj 71 279 *~;
+#X obj 478 62 s onoff;
+#X obj 499 21 route 0 1 2;
+#X obj 120 262 r onoff;
+#X obj 588 84 vsl 15 128 0 1.1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 547 63 vsl 15 128 0 1.1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 500 -6 netreceive 3003;
+#X text 111 141 Controla o level do Delay;
+#X text 78 71 Cria uma segunda linha de áudio;
+#X text 213 223 Reproduz a linha de áudio com Delay Controla o tempo
+do Delay;
+#X connect 0 0 3 0;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 4 0 1 0;
+#X connect 4 0 5 0;
+#X connect 5 0 2 0;
+#X connect 5 0 2 1;
+#X connect 7 0 6 0;
+#X connect 7 1 10 0;
+#X connect 7 2 9 0;
+#X connect 8 0 5 1;
+#X connect 9 0 4 0;
+#X connect 10 0 1 1;
+#X connect 11 0 7 0;

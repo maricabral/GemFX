@@ -1,0 +1,24 @@
+#N canvas 488 32 593 590 10;
+#X obj 162 23 netreceive 3004;
+#X obj 162 119 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 162 152 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 162 180 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 163 208 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 162 82 s onoff;
+#X obj 55 301 *~;
+#X obj 23 20 adc~;
+#X obj 22 361 dac~;
+#X obj 162 45 route 0 1 2;
+#X obj 55 256 wahwah~, f 9;
+#X connect 0 0 9 0;
+#X connect 6 0 8 0;
+#X connect 7 0 8 0;
+#X connect 9 0 5 0;
+#X connect 9 1 1 0;
+#X connect 9 2 2 0;
+#X connect 9 3 3 0;
+#X connect 10 0 6 0;

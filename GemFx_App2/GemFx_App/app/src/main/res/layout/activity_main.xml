@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gemfx.gemfx_app.MainActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/mytoolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guitar"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/mytoolbar">
+    </ImageView>
+
+    <ToggleButton
+        android:id="@+id/but_Distortion"
+        android:background="@drawable/trans_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textOff="   Distortion    "
+        android:textOn="Distortion ON"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/white"/>
+
+    <ToggleButton
+        android:id="@+id/but_Delay"
+        android:background="@drawable/trans_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textOff="  Delay  "
+        android:textOn="Delay ON"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/white"/>
+
+    <ToggleButton
+        android:id="@+id/but_Chorus"
+        android:background="@drawable/trans_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textOff="   Chorus    "
+        android:textOn="Chorus ON"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/white"/>
+
+    <ToggleButton
+        android:id="@+id/but_Gem"
+        android:background="@drawable/trans_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="250dp"
+        android:clickable="true"
+        android:textOff="   GemEffect    "
+        android:textOn="GemEffect ON"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rotation="270"
+        android:id="@+id/seekBar"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="180dp"
+        android:scrollbarStyle="insideOverlay"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amplitude = "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="480dp"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="560dp"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="0"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="480dp"
+        android:layout_marginTop="295dp"
+        android:id="@+id/textView2"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="480dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>
